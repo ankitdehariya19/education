@@ -3,7 +3,7 @@ import ReusableButton from '../../common/Element/ReusableButton'; // Update with
 
 const FeatureSection = () => {
   return (
-    <section className="bg-cover bg-center bg-no-repeat py-8 md:py-16 lg:py-20 relative" style={{ backgroundImage: 'url("/path/to/background-image.jpg")' }}>
+    <section className="   bg-cover bg-center bg-no-repeat py-8 md:py-16 lg:py-20 relative" style={{ backgroundImage: 'url("/path/to/background-image.jpg")' }}>
       <div className="container mx-auto text-white">
         <div className="lg:flex items-center">
           <div className="lg:w-1/2 lg:pl-10">

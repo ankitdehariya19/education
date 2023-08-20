@@ -15,7 +15,7 @@ const Categories = ({ icon, category }) => {
       variants={item}
       whileHover={{ scale: 1.1 }}
       className="flex items-center justify-center text-slate-200 flex-col gap-2 bg-teal-500 p-8 rounded-md hover:shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]"
-      style={{ width: "200px", height: "200px", margin: "20px" }} // Add margin here
+      style={{ width: "100%", maxWidth: "300px", margin: "20px" }} // Adjust width and max-width here
     >
       <div className="text-4xl text-slate-200">{icon}</div>
       <div>{category}</div>
@@ -51,7 +51,7 @@ const TopCategories = () => {
   ];
 
   return (
-    <section id="Categories" className="section flex flex-col items-center justify-center mt-32" id="categories">
+    <section id="Categories" className="section flex flex-col items-center justify-center mt-32" >
       <div className="text-center">
         <div className="sm:text-3xl text-2xl font-bold mb-5">
           Our Top <span className="text-Teal">Categories</span>
@@ -67,7 +67,7 @@ const TopCategories = () => {
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 0.3 }}
-        className="grid sm:flex md:grid-cols-2 sm:grid-cols-2 mt-12 gap-4"
+        className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 mt-12 gap-4" // Adjust grid columns for different screen sizes
       >
         {categories.map((category) => {
           return <Categories key={category.id} {...category} />;
