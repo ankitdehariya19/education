@@ -1,4 +1,4 @@
-"use client"
+// @react-server
 import React, { useState } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import Head from './Head';
