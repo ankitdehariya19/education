@@ -1,4 +1,4 @@
-// @react-server
+"use client"
 
 import React, { useState } from 'react';
 import { Link as ScrollLink } from 'react-scroll';

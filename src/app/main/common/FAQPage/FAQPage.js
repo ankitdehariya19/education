@@ -1,4 +1,4 @@
-// @react-server
+"use client"
 import React, { useState } from "react";
 import { BsChevronDown } from "react-icons/bs";
 import { motion, AnimatePresence } from "framer-motion";
