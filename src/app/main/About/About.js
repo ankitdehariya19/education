@@ -1,11 +1,8 @@
-"use client"
-
 import React, { useState } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
+import Image from 'next/image';
 
-
-const aboutImageUrl =
-  'https://images.unsplash.com/photo-1558021211-6d1403321394?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=726&q=80';
+const aboutImageUrl = '/about.jpg'; // Make sure the path is correct
 
 const About = () => {
   const [toggleTab, setToggleTab] = useState(1);
@@ -20,10 +17,12 @@ const About = () => {
         <div className='flex flex-col md:flex-row justify-between h-full'>
           <div className='w-full md:w-1/2 flex justify-center '>
             {/* Improved image rendering */}
-            <img
-              src={aboutImageUrl}
+            <Image
+              src={require('./about.jpg')}
               alt='About Us Image'
               className='about-img md:w-3/4 h-auto object-cover object-center'
+              width={600} // Adjust the width according to your design
+              height={400} // Adjust the height according to your design
             />
           </div>
           <div className='mt-4 md:mt-0 md:pl-6 md:w-1/2'>
