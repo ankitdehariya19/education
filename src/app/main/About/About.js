@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import Image from 'next/image';
