@@ -1,3 +1,4 @@
+"use client";
 import Home from './Home/Home';
 import Footer from './common/Footer/Footer';
 import Contact from './common/Contact/Contact';

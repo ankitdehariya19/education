@@ -1,7 +1,6 @@
-"use client"
+'use client';
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Home from './main/Home/Home';
+import Home from './main/Home/Home';``
 import Footer from './main/common/Footer/Footer';
 import Contact from './main/common/Contact/Contact';
 import FAQPage from './main/common/FAQPage/FAQPage';

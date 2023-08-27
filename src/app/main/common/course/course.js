@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link as ScrollLink } from 'react-scroll';
+import Image from 'next/image';
 
 const Course = ({ title, description, imageSrc, index }) => {
   return (
@@ -9,7 +10,7 @@ const Course = ({ title, description, imageSrc, index }) => {
       className="border rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300"
     >
       <div className="aspect-w-4 aspect-h-3">
-        <img
+        <Image
           src={imageSrc}
           alt={title}
           className="object-cover object-center w-full h-full"

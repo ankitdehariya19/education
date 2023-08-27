@@ -8,15 +8,15 @@ const Contact = () => {
                     Subscribe Gyanohm
                 </div>
                 <p className="text-sm leading-7 text-gray">
-                    "Welcome to Gyanohm, your gateway to boundless learning.
+                    Welcome to Gyanohm, your gateway to boundless learning.
                     Our educational platform is dedicated to empowering minds,
                     fostering curiosity, and sparking a passion for knowledge.
-                    Whether you're a student, educator, or lifelong learner,
+                    Whether youre a student, educator, or lifelong learner,
                     Gyanohm offers a diverse range of courses and resources
                     tailored to help you excel in your educational journey.
                     Join us as we explore new horizons, expand our
                     understanding, and embrace the joy of
-                    learning together."
+                    learning together.
                 </p>
                 <motion.form
                     initial={{ scale: 0 }}
