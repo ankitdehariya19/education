@@ -13,6 +13,8 @@ const Course = ({ title, description, imageSrc, index }) => {
         <Image
           src={imageSrc}
           alt={title}
+          height="100"
+          width="100"
           className="object-cover object-center w-full h-full"
         />
       </div>
