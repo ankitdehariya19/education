@@ -22,7 +22,7 @@ const Header = () => {
   return (
     <>
       <Head />
-      <header className="shadow-2xl bg-white md:shadow-blue-500/20 md:mr-16 md:ml-16 px-8">
+      <header className="shadow-2xl bg-white md:shadow-blue-500/20 md:mr-16 md:ml-16 px-8 ">
         <div className="md:bg-transparent md:mx-4 md:px-4 flex justify-between items-center relative md:mr-40 md:ml-40">
           <nav className={`hidden md:flex justify-between items-center ${click ? 'hidden' : ''}`}>
             <ul className="md:flex space-x-6 ml-6">

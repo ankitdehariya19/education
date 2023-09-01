@@ -13,7 +13,9 @@ const About = () => {
 
   return (
     <>
+
       <section className="about p-8 md:p-20 h-full bg-black ">
+      <ScrollLink to="about-section" spy={true} smooth={true} offset={-70} duration={500}>   </ScrollLink>
         <div className="flex flex-col md:flex-row justify-between h-full">
           <div className="w-full md:w-1/2 flex justify-center ">
             {/* Improved image rendering */}
@@ -27,14 +29,16 @@ const About = () => {
           </div>
           <div className="mt-4 md:mt-0 md:pl-6 md:w-1/2">
             <div className="tabs flex flex-wrap mt-4 md:mt-16">
+           
               <div
                 className={`single-tab ${toggleTab === 1 ? "active-tab" : ""
                   } w-full md:w-auto py-2 px-4 md:px-6 mb-2 md:mb-0 md:mr-2 border border-white hover:bg-teal-500 hover:border-teal-500 text-white font-semibold rounded-md transition duration-300 ease-in-out flex items-center justify-center text-lg md:text-xl`}
                 onClick={() => toggleState(1)}
               >
-                <ScrollLink to="about-section" spy={true} smooth={true} offset={-70} duration={500}>
-                  About
-                </ScrollLink>
+              
+                 
+                  <h2 className="uppercase"> About</h2>
+             
 
               </div>
               <div
@@ -150,6 +154,7 @@ const About = () => {
         </div>
 
       </section>
+   
     </>
   );
 };
